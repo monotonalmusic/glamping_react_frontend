@@ -21,7 +21,7 @@ const AktiviteterPage = () => {
 
 
   return (
-    <div className={page.pageContainer}>
+    <div className={styles.pageContainer}>
       <PageHeader title={"Aktiviteter"} bgImg={"/image_04.jpg"}></PageHeader>
       <div className={styles.aktiviteterPage}>
       <Box title={"Ingen skal kede sig hos Gitte"} width={"800px"} height={"auto"} color={"#33626C"}>
