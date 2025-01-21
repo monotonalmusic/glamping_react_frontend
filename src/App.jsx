@@ -1,5 +1,6 @@
 import { useRoutes } from "react-router-dom";
 // Common Pages.
+import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/home/HomePage";
 import AktiviteterPage from "./pages/aktiviteter/AktiviteterPage";
 import Backoffice from "./pages/backoffice/Backoffice";
@@ -65,7 +66,11 @@ const App = () => {
     <>
       <div>
         <Navigation></Navigation>
-        <div>{routes}</div>
+        <div>
+          <ScrollToTop>
+          {routes}
+          </ScrollToTop>
+          </div>
         {/* GLOBAL FOOTER */}
         <Footer></Footer>
       </div>

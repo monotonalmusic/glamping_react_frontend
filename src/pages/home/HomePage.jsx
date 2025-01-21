@@ -29,7 +29,10 @@ const HomePage = () => {
           naturen, slap af ved bålet, del historier med nye venner, eller find
           indre ro med vores wellnessaktiviteter
           <img src="/gitte.jpg" alt="" className={styles.gitteImg}/>
-          <Button color={"white"}>Se Vores Ophold</Button> 
+          <Link to={"/ophold"}>
+          <Button color={"white"}>Se Vores Ophold</Button>
+          </Link>
+           
           
         </Box>
         <Reviews></Reviews>
