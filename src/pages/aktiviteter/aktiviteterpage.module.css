@@ -1,0 +1,16 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #CED3CD;
+}
+
+.aktiviteterPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #CED3CD;
+    padding: 20px;
+}
