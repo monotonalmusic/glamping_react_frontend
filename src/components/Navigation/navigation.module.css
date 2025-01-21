@@ -43,7 +43,8 @@
 
     .active {
         border: 1px solid white;
-        padding: 1px;
+        border-radius: 5px 0 5px 0;
+        padding: 2px;
     }
 }
 

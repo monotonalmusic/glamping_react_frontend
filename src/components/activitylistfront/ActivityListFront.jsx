@@ -38,7 +38,7 @@ const ActivityListFront = ({ activeActivities }) => {
                 backgroundColor={"#829B97"}
                 onclick={() => toggleDescription(activity._id)}
               >
-                {visibleActivity === activity._id ? "Show Less" : "Read More"}
+                {visibleActivity === activity._id ? "Minimere" : "Læs mere"}
               </Button>
 
               {visibleActivity === activity._id && (

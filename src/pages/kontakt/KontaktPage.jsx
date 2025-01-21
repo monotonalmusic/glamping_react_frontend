@@ -76,7 +76,7 @@ const KontaktPage = () => {
                   required
                 ></textarea>
               </div>
-              <Button backgroundColor={"#829B97"} color={"white"}></Button>
+              <Button backgroundColor={"#829B97"} color={"white"}>Indsende</Button>
             </form>
           ) : (
             <p className={styles.message}>
