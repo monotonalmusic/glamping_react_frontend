@@ -1,0 +1,15 @@
+.pageContent {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    gap: 50px;
+    background-color: #CED3CD;
+
+    h2 {
+        font-size: 5rem;
+        font-weight: 700;
+
+    }
+}

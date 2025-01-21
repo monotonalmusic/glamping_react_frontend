@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.box {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 20px; /* Reduced top padding */
+    background-color: #33626C;
+    border-radius: 50px 0px 50px 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.title {
+    font-family: "Zen Loop", serif;
+    margin-top: 10px; /* Added top margin to fine-tune spacing */
+    margin-bottom: 15px; /* Adjust spacing below the title */
+    font-size: 10rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+  
+  .content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Nanum Gothic", serif;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+  }
+  

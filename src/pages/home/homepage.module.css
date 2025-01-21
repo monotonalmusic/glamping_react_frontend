@@ -1,0 +1,20 @@
+.homePage {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    gap: 40px;
+    background-color: #CED3CD;
+
+}
+
+.gitteImg {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image scales properly within the round shape */
+}
+
+

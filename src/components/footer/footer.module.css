@@ -1,0 +1,29 @@
+.footer {
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #2A4F57;
+
+    h2 {
+        color: white;
+    }
+}
+
+.logo {
+    margin-top: 20px;
+    width: 75px;
+    height: 75px;
+}
+
+.bottomFooterDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    color: white;
+}
+

@@ -1,0 +1,69 @@
+
+
+.stayContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CED3CD;
+}
+
+.stayList {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    z-index: 3;
+    position: relative;
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    
+}
+
+.listDiv {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stayContent {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    z-index: 2;
+    position: relative;
+
+    h2 {
+        font-size: 1.5rem;
+        color: white;
+    } 
+}
+
+.pictureDiv {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    width: 45vw;
+    margin-top: -75px;
+    margin-bottom: -75px;
+    height: 500px;
+} 
+
+.pictureDiv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* White semi-transparent overlay */
+    z-index: -1; /* Ensure it stays behind the content */
+}

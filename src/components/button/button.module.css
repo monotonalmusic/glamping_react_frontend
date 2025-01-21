@@ -1,0 +1,25 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 0px 50px 0px; /* Matches the box styling */
+    border: 2px solid white; /* Subtle border for better visibility */
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.05); /* Subtle zoom effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .button:active {
+    transform: scale(0.98); /* Slight depression on click */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Reduced shadow */
+  }
+  

@@ -1,0 +1,31 @@
+.pageHeaderContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: -100;
+    background-size: cover;
+
+    h1 {
+        font-family: "Zen Loop", serif;
+        font-size: 7rem;
+        color: white;
+    }
+
+}
+
+.pageHeaderContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* White semi-transparent overlay */
+    z-index: -1; /* Ensure it stays behind the content */
+}

@@ -1,0 +1,76 @@
+.navigation {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    right: 30px;
+    z-index: 1;
+    
+
+    svg {
+
+        color: #fff;
+        font-size : 60px;
+        cursor: pointer;
+        
+        &:hover {
+            color : pink;
+        }
+
+    }
+    .nav {
+        display : none;
+
+        &.open {
+            display: flex;
+            justify-content: end;
+        }
+
+    }
+
+    a {
+        color : white;
+        text-decoration: none;
+        margin : 0 5px;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .active {
+        border: 1px solid white;
+        padding: 1px;
+    }
+}
+
+.navMenu {
+    background-color: #829B97;
+    width: 100px;
+    padding : 20px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 50px 0px 50px 0px;
+    display: flex;
+
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+    top: 25px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .navLogo {
+    width: 50px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .logo:hover .navLogo {
+    transform: scale(1.05); /* Optional: slightly enlarge on hover */
+  }

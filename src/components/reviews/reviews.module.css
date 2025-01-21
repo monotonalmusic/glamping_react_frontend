@@ -1,0 +1,23 @@
+.reviewContainer {
+    
+    padding-bottom: 50px;
+}
+
+.reviewList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 200px;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}
+
+li {
+    list-style: none;
+}
+

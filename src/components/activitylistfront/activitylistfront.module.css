@@ -1,0 +1,57 @@
+.activityContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CED3CD;
+}
+
+.activityList {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    z-index: 3;
+    position: relative;
+}
+
+.listDiv {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 6rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.activityContent {
+    color: white;
+    margin-top: 20px;
+    background-color: #33626C;
+    padding: 20px;
+    width: 30vw;
+    height: 325px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    z-index: 2;
+    position: relative;
+    border-radius: 50px 0px 50px 0px;
+}
+
+.pictureDiv {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    width: 45vw;
+    margin-top: -75px;
+    margin-bottom: -75px;
+    height: 500px;
+}

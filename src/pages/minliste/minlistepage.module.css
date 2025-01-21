@@ -1,0 +1,17 @@
+.favoritesContainer {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+.emptyState {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
