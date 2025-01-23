@@ -8,7 +8,7 @@ import KontaktPage from "./pages/kontakt/KontaktPage";
 import MinlistePage from "./pages/minliste/MinlistePage";
 import Navigation from "./components/Navigation/Navigation";
 import ProtectedRoute from "./components/ProtectedRoute";
-import Login from "./components/Login";
+import Login from "./components/login/Login";
 import useAuth from "./hooks/useAuth";
 import Footer from "./components/footer/Footer";
 import OpholdPage from "./pages/ophold/OpholdPage";

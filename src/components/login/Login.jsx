@@ -5,7 +5,7 @@ const Login = () => {
   const { setEmail, setPassword, error, signIn } = useAuth();
 
   return (
-    <div className={styles.container}>
+    <div className={styles.loginContainer}>
       <form onSubmit={signIn} className={styles.form}>
         {error && <p style={{ color: "red" }}>{error}</p>}
         <input

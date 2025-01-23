@@ -1,7 +1,7 @@
-.container {
-  margin-top: 5vh;
+.loginContainer {
+  min-height: 100vh;
+
   width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,4 +20,9 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+  button {
+    background-color: #007bff;
+  }
+
 }
