@@ -1,4 +1,4 @@
-import styles from "../button/button.module.css";
+import styles from "./button.module.css";
 import { useNavigate } from "react-router-dom";
 
 const Button = ({ backgroundColor, color, height, width, link, onclick, children }) => {
