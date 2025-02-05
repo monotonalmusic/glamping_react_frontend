@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import styles from "./opholdsinglepage.module.css";
+import styles from "./OpholdSinglePage.module.css";
 import useStays from "../../hooks/useStays";
 import Button from "../../components/button/Button";
 import PageHeader from "../../components/pageheader/PageHeader";
