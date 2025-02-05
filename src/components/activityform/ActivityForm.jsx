@@ -1,5 +1,5 @@
 import useActivity from "../../hooks/useActivity";
-import styles from "./activityForm.module.css";
+import styles from "./activityform.module.css";
 
 const ActivityForm = () => {
   const {
