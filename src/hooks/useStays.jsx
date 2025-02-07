@@ -20,6 +20,7 @@ const useStays = () => {
 
       const data = await response.json();
       setStays(data.data);
+      console.log(data.data);
     } catch (err) {
       setError(err.message);
     } finally {
