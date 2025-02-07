@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import styles from "../activitylist/activitylist.module.css";
 import useActivity from "../../hooks/useActivity";
+import { backendURL } from "../../services/settings";
+
 
 const ActivityList = () => {
   const [activities, setActivities] = useState([]);
@@ -25,7 +27,7 @@ const ActivityList = () => {
   useEffect(() => {
     const fetchActivities = async () => {
       try {
-        const response = await fetch("http://localhost:3042/activities", {
+        const response = await fetch(`${backendURL}/activities`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -65,7 +67,7 @@ const ActivityList = () => {
       setEditMode(false);
       setCurrentActivity(null);
       // Refresh activities list
-      const response = await fetch("http://localhost:3042/activities", {
+      const response = await fetch(`${backendURL}/activities`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -80,7 +82,7 @@ const ActivityList = () => {
     try {
       await deleteActivity(id);
       // Refresh activities list
-      const response = await fetch("http://localhost:3042/activities", {
+      const response = await fetch(`${backendURL}/activities`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
