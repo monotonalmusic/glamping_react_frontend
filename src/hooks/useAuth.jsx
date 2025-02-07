@@ -2,6 +2,8 @@ import { useLocalStorage } from "@uidotdev/usehooks";
 import { jwtDecode } from "jwt-decode";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { backendURL } from "../services/settings";
+
 
 const useAuth = () => {
   const [email, setEmail] = useState("");
@@ -16,7 +18,7 @@ const useAuth = () => {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:3042/auth/signin", {
+      const response = await fetch(`${backendURL}/auth/signin`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

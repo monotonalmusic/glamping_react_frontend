@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { backendURL } from '../services/settings';
+
 
 const useStays = () => {
   const [stays, setStays] = useState([]);
@@ -10,7 +12,7 @@ const useStays = () => {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:3042/stays');
+      const response = await fetch(`${backendURL}/stays`);
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

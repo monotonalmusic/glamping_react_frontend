@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { backendURL } from '../services/settings';
+
 
 const useReviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -10,7 +12,7 @@ const useReviews = () => {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:3042/reviews');
+      const response = await fetch(`${backendURL}/reviews`);
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

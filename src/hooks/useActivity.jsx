@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useAuth from "../hooks/useAuth";
+import { backendURL } from "../services/settings";
 
 const useActivity = () => {
   const [title, setTitle] = useState("");
@@ -31,7 +32,7 @@ const useActivity = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3042/activity", {
+      const response = await fetch(`${backendURL}/activity`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -57,7 +58,7 @@ const useActivity = () => {
     setSuccess(false);
 
     try {
-      const response = await fetch(`http://localhost:3042/activity/${id}`, {
+      const response = await fetch(`${backendURL}/activity/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -88,7 +89,7 @@ const useActivity = () => {
     setSuccess(false);
 
     try {
-      const response = await fetch(`http://localhost:3042/activity/${id}`, {
+      const response = await fetch(`${backendURL}/activity/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { backendURL } from '../services/settings';
 
 const useActivities = () => {
   const [activities, setActivities] = useState([]); // State to store fetched activities
@@ -6,7 +7,7 @@ const useActivities = () => {
   const [loading, setLoading] = useState(false); // State to indicate loading status
 
   useEffect(() => {
-    const url = 'http://localhost:3042/activities';
+    const url = `${backendURL}/activities`;
 
     const fetchActivities = async () => {
       setLoading(true);
