@@ -8,6 +8,8 @@ import styles from "./opholdlist.module.css";
 const Stays = () => {
   const { stays, loading, error } = useStays();
 
+  console.log(stays);
+
   if (loading) return <p>Loading stays...</p>;
   if (error) return <p>Error: {error}</p>;
 
