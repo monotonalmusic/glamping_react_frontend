@@ -12,7 +12,7 @@ const useStays = () => {
     setError(null);
 
     try {
-      const response = await fetch(`${backendURL}/stays`);
+      const response = await fetch(`${backendURL}/stays/`);
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

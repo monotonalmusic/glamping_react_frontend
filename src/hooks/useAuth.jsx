@@ -18,7 +18,7 @@ const useAuth = () => {
     setError("");
 
     try {
-      const response = await fetch(`${backendURL}/auth/signin`, {
+      const response = await fetch(`${backendURL}/auth/signin/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

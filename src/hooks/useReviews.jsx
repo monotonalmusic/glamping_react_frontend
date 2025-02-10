@@ -12,7 +12,7 @@ const useReviews = () => {
     setError(null);
 
     try {
-      const response = await fetch(`${backendURL}/reviews`);
+      const response = await fetch(`${backendURL}/reviews/`);
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

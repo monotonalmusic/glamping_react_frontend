@@ -24,24 +24,24 @@ const App = () => {
       path: "/",
       element: <HomePage></HomePage>,
     },
-    { path: "/login", element: <Login></Login>
+    { path: "/login/", element: <Login></Login>
     },
 
     {
-      path: "/aktiviteter",
+      path: "/aktiviteter/",
       element: <AktiviteterPage></AktiviteterPage>,
     },
     {
-      path: "/ophold",
+      path: "/ophold/",
       element: <OpholdPage></OpholdPage>,
     },
     {
-      path: "/ophold/:id",
+      path: "/ophold/:id/",
       element: <OpholdSinglePage></OpholdSinglePage>,
     },
 
     {
-      path: "/backoffice",
+      path: "/backoffice/",
       element: (
         <ProtectedRoute isAllowed={signedIn}>
           <Backoffice />
@@ -49,11 +49,11 @@ const App = () => {
       ),
     },
     {
-      path: "/kontakt",
+      path: "/kontakt/",
       element: <KontaktPage></KontaktPage>,
     },
     {
-      path: "/minliste",
+      path: "/minliste/",
       element: <MinlistePage></MinlistePage>,
     },
     {

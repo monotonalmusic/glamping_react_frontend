@@ -7,7 +7,7 @@ const useActivities = () => {
   const [loading, setLoading] = useState(false); // State to indicate loading status
 
   useEffect(() => {
-    const url = `${backendURL}/activities`;
+    const url = `${backendURL}/activities/`;
 
     const fetchActivities = async () => {
       setLoading(true);

@@ -36,7 +36,7 @@ const Stays = () => {
                 style={{ backgroundImage: `url(${stay.image})` }}
               ></div>
 
-              <Link to={`/ophold/${stay._id}`}>
+              <Link to={`/ophold/${stay._id}/`}>
                 <Button backgroundColor={"#829B97"} color={"white"}>Læs mere</Button>
               </Link>
             </div>

@@ -27,7 +27,7 @@ const ActivityList = () => {
   useEffect(() => {
     const fetchActivities = async () => {
       try {
-        const response = await fetch(`${backendURL}/activities`, {
+        const response = await fetch(`${backendURL}/activities/`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

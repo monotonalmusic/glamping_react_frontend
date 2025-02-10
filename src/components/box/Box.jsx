@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styles from "./box.module.css";
 
 const Box = ({ title, children, width, height, color }) => {

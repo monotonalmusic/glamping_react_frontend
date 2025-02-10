@@ -32,7 +32,7 @@ const useActivity = () => {
     }
 
     try {
-      const response = await fetch(`${backendURL}/activity`, {
+      const response = await fetch(`${backendURL}/activity/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -58,7 +58,7 @@ const useActivity = () => {
     setSuccess(false);
 
     try {
-      const response = await fetch(`${backendURL}/activity/${id}`, {
+      const response = await fetch(`${backendURL}/activity/${id}/`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -89,7 +89,7 @@ const useActivity = () => {
     setSuccess(false);
 
     try {
-      const response = await fetch(`${backendURL}/activity/${id}`, {
+      const response = await fetch(`${backendURL}/activity/${id}/`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
